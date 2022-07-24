@@ -1,13 +1,15 @@
-import { InnerContainer, OuterContainer } from "./common/Container";
+// React Router
+import { Route, Routes } from 'react-router-dom';
+
+// Views
+import Home from "./views/Home";
 
 export default function App() {
   return (
-    <OuterContainer>
-      <InnerContainer>
-        <div>
-          <h1>Bookkeeper! Hello!</h1>
-        </div>
-      </InnerContainer>
-    </OuterContainer>
+    <div className='App'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
   );
 }

@@ -5,5 +5,5 @@ export const OuterContainer = styled.div`
 `
 
 export const InnerContainer = styled.div`
-    padding: 0 1em 0 1em;
+    padding: 1em 1em 0 1em;
 `

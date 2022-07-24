@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Colors } from "../common/Colors";
 
-function MainTitle({
+function SubTitle({
     text
 }) {
     return (
@@ -11,10 +11,12 @@ function MainTitle({
     )
 };
 
-export default MainTitle;
+export default SubTitle;
 
 const Text = styled.p`
-    font-size: 22px;
-    font-weight: 700;
-    color: ${Colors.blackText};
+    font-size: 16px;
+    font-weight: 400;
+    color: ${Colors.grayText};
+    font-style: italic;
+    
 `

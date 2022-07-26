@@ -12,11 +12,13 @@ import Card from "../components/Card";
 
 // utilities
 import { cars } from "../utilities/car";
+import { useNavigate } from "react-router-dom";
 
 
 function Home() {
 
     const data = cars;
+    const navigate = useNavigate();
 
     // Render cars collection
     function renderCars(data) {
@@ -27,6 +29,7 @@ function Home() {
                 subtitle={value.subtitle}
                 imageSrc={value.imageSrc}
                 imageAlt={value.imageAlt}
+                onClick={() => navigate(`/car/${value.title}`)}
             />
         ))
     }

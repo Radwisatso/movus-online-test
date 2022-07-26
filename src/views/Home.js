@@ -29,7 +29,7 @@ function Home() {
                 subtitle={value.subtitle}
                 imageSrc={value.imageSrc}
                 imageAlt={value.imageAlt}
-                onClick={() => navigate(`/car/${value.value}`)}
+                onClick={() => navigate(`/car/${value.title}`)}
             />
         ))
     }

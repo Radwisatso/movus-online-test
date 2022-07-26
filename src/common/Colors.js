@@ -3,5 +3,5 @@ export const Colors = {
     grayColor: '#eeeeee', // gray background
     blackText: '#11111', // black text
     grayText: '#333333', // gray text
-    whiteBackground: '#ffffff'
+    whiteBackground: '#ffffff' // movus white background
 }
